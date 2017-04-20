@@ -1,0 +1,695 @@
+/*****************************************************
+                      Global Styles
+ *****************************************************/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    backgroundcolor: black;
+}
+
+/*****************************************************
+                     Layout
+ *****************************************************/
+
+/*****************************************************
+                    Specific Style
+ *****************************************************/
+#home {
+    background-image: url("../img/pozadina-slika.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+   /* height: auto;
+    margin-bottom: 60px;
+    padding-bottom: 66px;*/
+}
+
+.logo {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navigation {
+    position: absolute;
+    width: 100%;
+}
+
+.slide-menu {
+    float: right;
+    list-style: none;
+    display: none;
+    padding: 0;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.98);
+    margin: 0;
+    height: auto;
+}
+
+.slide-menu li {
+    font-size: 30px;
+    color: gray;
+    text-align: center;
+    padding: 22px;
+    font-weight: 300;
+}
+
+.slide-menu li a {
+    text-decoration: none;
+    color: white;
+}
+.slide-menu li:nth-child(1) {
+    margin-top: 157px;
+}
+
+.slide-menu li p {
+    font-weight: 400;
+}
+
+#nav-button {
+    cursor: pointer;
+    position: fixed;
+    height: 20px;
+    width: 60px;
+    top: 20px;
+    right: 5px;
+    display: block;
+    float: right;
+    z-index: 33;
+}
+
+#nav-button span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    border-radius: 5px;
+    position: absolute;
+    background-color: black;
+    transition: all .2s ease;
+}
+
+#nav-button span:nth-child(1) {
+    top: 0;
+    margin-bottom: 10px;
+}
+
+#nav-button span:nth-child(2) {
+    top: 8px;
+    margin-top: 3px;
+}
+
+#nav-button span:nth-child(3) {
+    top: 16px;
+    margin-top: 6px;
+}
+
+.naslov {
+    font-size: 400%;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 220px;
+    margin-bottom: 20px;
+}
+
+.digital {
+    text-align: center;
+    font-weight: 500;
+}
+
+.media {
+    visibility: hidden;
+}
+.follow-us p {
+    float: left;
+    font-size: 20px;
+}
+
+.follow-us a {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/*Section Work*/
+#work img {
+    margin-left: 140px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: block;
+    margin: auto;
+}
+
+#work h3 {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+#work h3:after {
+    content: '';
+    display: block;
+    background: #b4b4b4;
+    height: 2px;
+    max-width: 50px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#work p {
+    text-align: center;
+    line-height: 150%;
+    font-size: 18px;
+    margin: 0 5px 70px 5px;
+    color: #a4a4a4;
+    font-weight: 400;
+}
+
+.circle {
+    background-color: #e7e7e7;
+    padding-bottom: 5px;
+    padding-top: 70px;
+}
+
+.sqare {
+    background-color: #fafafa;
+    padding-bottom: 5px;
+    padding-top: 70px;
+    margin-bottom: 90px;
+}
+
+/*Section Poslovi*/
+#poslovi {
+    margin-bottom: 110px;
+}
+#poslovi h3 {
+    font-weight: 500;
+}
+
+#poslovi p {
+    font-weight: 300;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+#poslovi span {
+    color: red;
+    font-weight: 300;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.positions p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #b4b4b4;
+    letter-spacing: 2px;
+}
+
+.positions h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.positions h2:after {
+    content: '';
+    display: block;
+    background: #bd0000;
+    height: 2px;
+    max-width: 50px;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#multi {
+    text-align: center;
+    font-weight: 300;
+    font-size: 25px;
+    color: black;
+    padding: 0 20px 90px 20px;
+    margin: 0;
+}
+
+.front-end {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.manager {
+    padding: 20px;
+}
+
+.designer {
+    padding: 20px;
+    background-color: #f7f7f7;
+    margin-bottom: 110px;
+}
+#white1 {
+    display: none;
+}
+.button1 {
+    display: none;
+}
+.button2 {
+    display: none;
+}
+.button3 {
+    display: none;
+}
+.design1 {
+    display: none;
+}
+.button {
+    background-color: #f2f2f2;
+    padding: 20px 60px 20px 60px;
+    display: block;
+    border: none;
+    margin-left: 45px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.button:hover {
+    background-color: gray;
+    color: white;
+}
+
+/*Section digital*/
+#digital {
+    margin-bottom: 90px;
+}
+
+#digital h3 {
+    text-align: center;
+    font-weight: 300;
+    color: #a4a4a4;
+    font-size: 14px;
+    padding-top: 70px;
+}
+
+.belgrade {
+    background-color: #fbfbfb;
+    margin-bottom: 90px;
+    padding-bottom: 80px;
+
+}
+
+.belgrade h2 {
+    text-align: center;
+    font-size: 40px;
+    padding: 0 40px;
+    font-weight: 500;
+}
+
+.belgrade h2:after {
+    content: '';
+    display: block;
+    max-width: 50px;
+    width: 100%;
+    height: 2px;
+    margin: auto;
+    background: #bd0000;
+    margin-top: 40px;
+}
+
+.belgrade p {
+    padding: 10px 20px;
+    line-height: 150%;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.follow p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #a4a4a4;
+    margin-bottom: 50px;
+}
+.follow {
+    text-align: center;
+}
+
+.social {
+    float: left;
+    padding:20px;
+}
+
+.facebook {
+    padding-left: 10px;
+}
+
+/*Section Kontakt*/
+#kontakt {
+    background: #1f1f1f;
+    padding: 60px 0 10px 20px;
+}
+
+#kontakt spam {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+.city img {
+    margin-left: 40px;
+    position: relative;
+    top: 5px;
+}
+
+#kontakt li {
+    color: gray;
+    list-style: none;
+}
+
+.city {
+    margin-bottom: 50px;
+}
+
+.social-gray {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.social-gray img {
+    margin-left: 20px;
+}
+
+.social-gray a {
+    text-decoration: none;
+    color: gray;
+    margin-left: 40px;
+}
+
+.main-footer {
+    background-color: black;
+    margin: 0;
+}
+
+.main-footer p {
+    font-weight: 300;
+    font-size: 12px;
+    color: gray;
+    margin: 0 0 0 50px;
+    padding: 10px;
+}
+
+/*****************************************************
+                    Help Classes
+ *****************************************************/
+@media(min-width: 522px) {
+    .slide-menu li:nth-child(1){
+        margin-top: 62px;
+    }
+}
+
+@media(min-width: 768px) {
+
+    .logo {
+        padding: 10px 0 0 30px;
+    }
+    .slide-menu li{
+        padding: 18px;
+    }
+    .media {
+        visibility: visible;
+        font-size: 22px;
+        text-align: center;
+        margin: auto;
+    }
+    .digital {
+        visibility: hidden;
+    }
+
+    .naslov {
+        padding: 30px 0 0 0;
+        margin: 0;
+        position: relative;
+        top: 20px;
+    }
+
+    #home {
+        margin: 0;
+    }
+
+    #triangle {
+        padding-top: 70px;
+        margin: 0;
+    }
+
+    .sqare {
+        margin-bottom: 120px;
+    }
+
+    #multi {
+        margin: auto;
+        padding: 0 0 50px 0;
+    }
+
+    .front-end {
+        background-color: white;
+        margin: 0;
+        padding-left: 70px;
+    }
+
+    .front-end p {
+        padding-bottom: 20px;
+    }
+
+    #poslovi span {
+        padding: 5px 20px;
+        border: 1px solid gray;
+    }
+    .belgrade p {
+        padding-left: 70px;
+    }
+
+    .manager {
+        background-color: black;
+        color: #ffffff;
+        padding-left: 70px;
+        padding-bottom: 30px;
+    }
+    .manager p{
+        padding-bottom: 20px;
+    }
+    .manager1 {
+        background-color: black;
+    }
+    .designer {
+        background-color: #fff;
+        padding-left: 70px;
+        padding-bottom: 70px;
+        margin: 0;
+    }
+    #white {
+        display: none;
+    }
+    #white1 {
+        display: block;
+        color: #ffffff;
+    }
+    #white1 span {
+        color: #ffffff;
+    }
+    .design {
+        display: none;
+    }
+    .design1 {
+        display: block;
+    }
+    .social-gray {
+        float: right;
+        padding: 25px;
+        margin-right: 70px;
+    }
+    .social-gray a {
+        margin-left: 20px;
+    }
+    .main-footer p {
+        padding: 20px 0 20px 0;
+    }
+    .button1 {
+        display: block;
+        bottom: 110px;
+        position: relative;
+        left: 5500px;
+        padding: 10px 30px;
+        border: black 2px solid;
+        background-color: white;
+        cursor: pointer;
+    }
+    .button1:hover {
+        background-color: black;
+        color: #ffffff;
+    }
+    .button2 {
+        display: block;
+        bottom: 110px;
+        position: relative;
+        left: 550px;
+        padding: 10px 30px;
+        border: white 2px solid;
+        background-color: black;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    .button2:hover {
+        background-color: white;
+        color: black;
+    }
+    .button3 {
+        display: block;
+        bottom: 110px;
+        position: relative;
+        left: 550px;
+        padding: 10px 30px;
+        border: black 2px solid;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+    .button3:hover {
+        background-color: black;
+        color: white;
+    }
+    .one-third {
+        width: 33.333%;
+        float: left;
+    }
+    .one-third1 {
+        width: 33.333%;
+        float: left;
+        margin: auto;
+        padding: 10px 0 0 100px;
+    }
+    .one-half {
+        width: 50%;
+        padding-bottom: 30px;
+    }
+    .clearfix:before,
+    .clearfix:after {
+        content: '';
+        display: table;
+    }
+    .clearfix:after {
+        clear: both;
+    }
+
+
+    .slide-menu li:nth-child(1) {
+        margin-top: 0px;
+    }
+}
+@media (min-width: 800px) {
+    .slide-menu li:nth-child(1) {
+        margin-top: 50px;
+    }
+    .slide-menu {
+        z-index:333;
+    }
+    .media {
+        padding-bottom: 110px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .naslov {
+        padding: 50px 0 0 0;
+    }
+    .naslov:after {
+        content: '';
+        display: block;
+        max-width: 50px;
+        width: 100%;
+        height: 2px;
+        margin: auto;
+        background: #bd0000;
+        margin-top: 20px;
+    }
+    .media {
+        padding-bottom: 323px;
+    }
+    .container {
+        width: 70%;
+        padding: 0 50px;
+    }
+    #nav-button {
+        display: none;
+    }
+    .slide-menu {
+        display: block;
+        background-color: transparent;
+        width: 50%;
+        height: 50px;
+        position: relative;
+        bottom: 50px;
+        left: 110px;
+    }
+    .slide-menu li {
+        text-align: center;
+        display: inline-block;
+        padding: 0 20px;
+
+    }
+    .slide-menu li:nth-child(1) {
+        margin: 0;
+    }
+    .slide-menu li a {
+        color: black;
+        font-size: 20px;
+    }
+    .follow-us p {
+        display: none;
+    }
+    .follow-us img {
+        display: none;
+    }
+    .front-end {
+        padding-left: 200px;
+    }
+    .manager {
+        padding-left: 200px;
+    }
+    .designer {
+        padding-left: 200px;
+    }
+    .belgrade p {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    .button1 {
+        margin:auto;
+        left: 220px;
+    }
+    .button2 {
+        margin: auto;
+        left: 610px;
+    }
+    .button3 {
+        margin: auto;
+        left: 610px;
+    }
+}
+@media (min-width: 1440px) {
+        .naslov {
+            padding-top: 130px;
+        }
+    .social-gray {
+        margin-right: 240px;
+    }
+    .button1 {
+        left: 225px;
+    }
+}
